@@ -16,4 +16,5 @@ export default defineConfig({
             additionalData: `@import "resources/css/bootstrap.min.css";`,
         },
       },
+    }
 });
