@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/sdf', function () {
+    return view('about');
+});
+
+Route::get('about', [Controllers::class, 'index']);
